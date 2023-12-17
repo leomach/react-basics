@@ -42,7 +42,9 @@ class Home extends Component {
     return (
       <section className="container">
         <Posts posts={posts} />
-        <Button onclick={this.loadMorePosts} text={"texto qualquer"}></Button>
+        <div className="button-container">
+          <Button onclick={this.loadMorePosts} text={"texto qualquer"}></Button>
+        </div>
       </section>
     );
   }
