@@ -37,13 +37,18 @@ class Home extends Component {
   };
 
   render() {
-    const { posts } = this.state;
+    const { posts, page, postsPerPage, allPosts } = this.state;
+    const noMorePosts = page + postsPerPage >= allPosts.length;
 
     return (
       <section className="container">
         <Posts posts={posts} />
         <div className="button-container">
-          <Button onclick={this.loadMorePosts} text={"texto qualquer"}></Button>
+          <Button
+            onclick={this.loadMorePosts}
+            text={"texto qualquer"}
+            disabled={noMorePosts}
+          />
         </div>
       </section>
     );

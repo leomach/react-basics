@@ -3,9 +3,9 @@ import "./styles.css";
 
 export class Button extends Component {
   render() {
-    const { onclick, text } = this.props;
+    const { onclick, text, disabled } = this.props;
     return (
-      <button className="button" onClick={onclick}>
+      <button className="button" onClick={onclick} disabled={disabled}>
         {text}
       </button>
     );
