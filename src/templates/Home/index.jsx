@@ -55,6 +55,7 @@ class Home extends Component {
 
     return (
       <section className="container">
+        <h1 className="title">NEWS</h1>
         <div className="search-container">
           {!!searchValue && <h1>Search Value: {searchValue}</h1>}
           <TextInput onchange={this.handleChange} searchValue={searchValue} />

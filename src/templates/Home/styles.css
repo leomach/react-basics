@@ -16,3 +16,13 @@
 .search-container h1 {
   margin-bottom: 10px;
 }
+
+.title {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 4rem;
+
+  width: 100%;
+  text-align: center;
+
+  padding-bottom: 30px;
+}
